@@ -33,7 +33,7 @@ public class Exercises {
     }
 	
 	// implement this method so that it returns
-    // the sum of all numbers between 1 and n inclusive
+    // the sum of all numbers between 1 and max inclusive
     // that are divisible by either 2 or 5
     public static int sumEvenFive(int max) {
         int sum = 0;
