@@ -33,22 +33,21 @@ public class Exercises {
     // "Free" if they are under 5
     public static String ticketType(int age)
     {
-        String ticketType = "";
         if (age < 5)
-            ticketType = "Free";
+            return "Free";
         else if (age <= 12) {
-            ticketType = "Child";
+            return "Child";
         }
         else if (age <= 17) {
-            ticketType = "Student";
+            return "Student";
         }
         else if (age < 60) {
-            ticketType = "Standard";
+            return "Standard";
         }
         else if (age >= 60) {
-            ticketType = "OAP";
+            return "OAP";
         }
-        return ticketType;
+        return "Please enter a valid age.";
     }
 
     // Question 4
