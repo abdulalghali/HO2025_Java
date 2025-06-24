@@ -2,6 +2,11 @@ package com.sparta;
 
 public class Exercises {
 
+
+    public static void main(String[] args) {
+
+    }
+
     // Question 1 change this method so that it uses the ternary operator ?
     public static String getForecast(int temp) {
         return temp < 15 ? "It's cold" : "It's hot";
@@ -77,8 +82,6 @@ public class Exercises {
                 allowedGuests = 20;
                 break;
             case 3:
-                allowedGuests = 50;
-                break;
             case 2:
                 allowedGuests = 50;
                 break;
