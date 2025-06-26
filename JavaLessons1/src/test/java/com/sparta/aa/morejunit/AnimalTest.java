@@ -7,30 +7,30 @@ import org.junit.jupiter.api.Test;
 
 public class AnimalTest {
 
-    private Rhino horn;
+    private Rhino sut; //system under test
 
     @BeforeEach
-    public void createRhino(){
-        horn = new Rhino("horn", 1000, 2015, 11, 6);
+    public void setUp(){
+        sut = new Rhino("horn", 1000, 2015, 11, 6);
 
     }
 
     @Test
     public void rhinoGetWeight(){
         String result = "This Rhino weighs 1000KG";
-        Assertions.assertEquals(horn.getWeight(),result);
+        Assertions.assertEquals(sut.getWeight(),result);
 
     }
 
     @Test
     public void rhinoGetPetName() {
         String result = "horn";
-        Assertions.assertEquals(horn.getPetname(), result);
+        Assertions.assertEquals(sut.getPetname(), result);
     }
     @Test
     public void rhinoEat() {
         String result = "I am eating humans";
-        Assertions.assertEquals(horn.eat(), result);
+        Assertions.assertEquals(sut.eat(), result);
     }
 
 }
